@@ -160,9 +160,5 @@ class FIX:
 			157: 'NumDaysInterest',
 			158: 'AccruedInterestRate',
 			159: 'AccruedInterestAmt',
-			160: '
-			
 
 			}
-import socket
-
