@@ -1,7 +1,10 @@
 #!/usr/bin/python
 class FIX:
-	def __init__(self):	
-		self.fd = {
+	def __init__(self):
+		pass
+	def fd(self, x):
+		self.x = x
+		fl = {
 				1: 'Account',
 				2: 'AdvID',
 				3: 'AdvRefID',
@@ -408,3 +411,26 @@ class FIX:
 				445: 'EncodedListStatusTextLen',
 				446: 'EncodedListStatusText'
 				}
+		for k in fl:
+			v = fl[k]
+			if x in fl:
+				print fl[x] 
+			else:
+				exit()
+			 
+
+
+	def sd(self):
+		x = raw_input("Search the standard FIX 4.2 dictionary:\n1. By Tag Number\n2. By Tag Name\n")
+		if x == "1":
+			tag_num = int(raw_input("Enter the tag number:\n>"))
+			self.fd(tag_num)
+		else:
+			exit()
+	 
+
+	
+	
+if __name__ == "__main__":
+	s = FIX()	
+	s.sd()
